@@ -17,10 +17,13 @@ const PORT = process.env.PORT;
 const __dirname = path.resolve();
 
 app.use(express.json());
-app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chat-app-git-main-utkarshs-projects-7cc34808.vercel.app",
+    origin: [
+      "http://localhost:5173", // for local dev
+      "https://chat-app-git-main-utkarshs-projects-7cc34808.vercel.app", // production frontend
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
