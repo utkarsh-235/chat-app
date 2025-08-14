@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://chat-app-git-main-utkarshs-projects-7cc34808.vercel.app",
     credentials: true,
   })
 );
