@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173", // for local dev
+      "http://localhost:5001", // for local dev
       "https://chat-app-git-main-utkarshs-projects-7cc34808.vercel.app", // production frontend
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
